@@ -1,6 +1,6 @@
 public class Player {
-    int Hp = 10; // player health
-    int power = 5 ; // attack power
+    int Hp = 100; // player health
+    int power = 20 ; // attack power
 
     public Player(int Hp, int power) {
         this.Hp = Hp;

@@ -1,5 +1,5 @@
-public class RabidDog extends Enemy {
-    public RabidDog(int hp, String name, int amount){
+public class QuickCanine extends Enemy {
+    public QuickCanine(int hp, String name, int amount){
         super(1, "RabidDog", amount );
     }
         @Override

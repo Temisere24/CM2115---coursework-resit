@@ -11,7 +11,7 @@ public class CombatRoom extends Room {
                 int i=1;
                 // retry loop
                 while(i != 50){
-                RabidDog dog = new RabidDog(1, "RabidDog", roomNum);
+                QuickCanine dog = new QuickCanine(1, "QuickCanine", roomNum);
                 dog.attack();
                 dog.description();
                 System.out.println("will you fight back(type '1 for yes' or '2 for no')");
@@ -32,7 +32,7 @@ public class CombatRoom extends Room {
         int i=1;
                 // retry loop
                 while(i != 50){
-                FesterBeast beast = new FesterBeast (3, "FesterBeast", roomNum);
+                GrimBeast beast = new GrimBeast (3, "GrimBeast", roomNum);
                 beast.attack();
                 beast.description();
                 System.out.println("will you fight back(type '1 for yes' or '2 for no')");
@@ -54,7 +54,7 @@ public class CombatRoom extends Room {
     }else if(roomNum == 7){
         int i = 1;
         while(i != 50){
-            BeastShaman beast = new BeastShaman (5, "beast master", roomNum);
+            Dragon beast = new Dragon (5, "beast master", roomNum);
             beast.attack();
             beast.description();
             System.out.println("will you fight back(type '1 for yes' or '2 for no')");

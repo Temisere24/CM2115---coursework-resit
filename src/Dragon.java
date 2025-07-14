@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class BeastShaman extends Enemy{
-    public BeastShaman(int hp, String name, int amount){
-        super(5, "the shaman", 1 );
+public class Dragon extends Enemy{
+    public Dragon(int hp, String name, int amount){
+        super(50, "the dragon", 10 );
     }
         @Override
     public void attack() {
-        System.out.println(name + " you feel a malicious presence staring you down as you look forward and meet the gaze of the beast shaman");
+        System.out.println(name + " you feel a malicious presence staring you down as you look forward and meet the gaze of the beast dragon");
     }
     @Override
     public void fightBack(Player player, int turn) {
         int health = hp*amount; 
         
-        System.out.println( " you charge at the shaman");
+        System.out.println( " you charge at the dragon");
         if(turn == 1){ //on the first turn
             System.out.println("it swiftly dodges ou having expected you to charge and strikes you, thats a lot of damage");
             player.setHp(getHp()- 5);// player hp is reduced by 5 
@@ -27,14 +27,14 @@ public class BeastShaman extends Enemy{
             System.out.println("you wait observing it for the opportunity to strike, you notice it trying to chant a spell,  you dash forward and stab it through the heart. it is dead ");
             setHp(0);
         } else{
-            System.out.println("the BeastShaman shrugs off your attack and heals itself, it has no effect");
+            System.out.println("the dragon shrugs off your attack and heals itself, it has no effect");
         }
     }
     public Enemy summonEnemy(){
         if((int)(Math.random()*2)== 1){
-            return new FesterBeast (2, "goon", 1);
+            return new GrimBeast (2, "goon", 1);
         }else{
-            return new RabidDog (1, "goon", 3);
+            return new QuickCanine (1, "goon", 3);
         }
        
     }

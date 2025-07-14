@@ -9,13 +9,13 @@ public class AppGame{
     // Game loop
       Room room;
       Player you = new Player(100, 20);
-      System.out.println("your hp is 10, your power is 5, power has to be greater than the enemy hp to deal damage");
+      System.out.println("your hp is 100, your power is 20, power has to be greater than the enemy hp to deal damage");
     for (int i = 0; i < 6; i++) {
         if(i % 2 == 0 ){
         
-        room =   room1.MakeRoom("fight room", "your purpose is to battle");
+        room =   room1.MakeRoom("Enemy room", "your Aim is to Fight and defeat your opponent");
         }else{
-        room = room2.MakeRoom("puzzle room", "hope ur really smart");
+        room = room2.MakeRoom("puzzle room", "hope You got your thinking shoes on ");
         }
         room.describe();
         room.problem(answer, i, you);

@@ -1,5 +1,5 @@
-public class FesterBeast extends Enemy {
-    public FesterBeast(int hp, String name, int amount){
+public class GrimBeast extends Enemy {
+    public GrimBeast(int hp, String name, int amount){
         super(3, "FesterBeast", amount );
     }
         @Override
