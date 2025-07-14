@@ -1,4 +1,4 @@
-public class Dungeon {
+public class dungeon {
     private Room[] rooms = new Room[20];
     //number of rooms below
    //private int roomNum;
