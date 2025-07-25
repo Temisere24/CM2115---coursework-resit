@@ -1,10 +1,10 @@
 public class QuickCanine extends Enemy {
     public QuickCanine(int hp, String name, int amount){
-        super(1, "RabidDog", amount );
+        super(1, "QuickCanine", amount );
     }
         @Override
     public void attack() {
-        System.out.println(name + " attacks with a vicious bite!");
+        System.out.println(name + " attacks with a Dangerous bite!");
     }
     @Override
     public void fightBack(Player player, int turn) {
@@ -13,11 +13,11 @@ public class QuickCanine extends Enemy {
         if(player.GetPower()> health){
             System.out.println("you overwhelm the dog, it is dead");
         }else if(player.GetPower() == health){
-            System.out.println("it was close but somehow you won, ur a bit injured but the bastard is dead,  you are nolonger at full strength");
-            player.setHp(player.getHp()-(1*amount));// you lose a bit of health
-            player.setPower(player.GetPower()-(1*amount));// you lose a bit of power
+            System.out.println("It was a close fight, but you managed to win. You're slightly wounded, and no longer at full strength—but the beast is dead.");
+            player.setHp(player.getHp()-(1*amount));// you lost a bit of health
+            player.setPower(player.GetPower()-(1*amount));// you lost a bit of power
         }else{
-            System.out.println("you lost, it was too strong");
+            System.out.println("the creature was simply too powerful.");
         }
     }
 }
