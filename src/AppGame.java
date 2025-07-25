@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class AppGame{
   public static void main(String[] args) {
     //plyer input
-    MakeCombatRoom room1 = new MakeCombatRoom();
-    MakeChallengeRoom room2 = new MakeChallengeRoom();
+    CreateCombatRoom room1 = new CreateCombatRoom();
+    CreateChallengeRoom room2 = new CreateChallengeRoom();
     int answer=0;
     // Game loop
       Room room;
@@ -13,9 +13,9 @@ public class AppGame{
     for (int i = 0; i < 6; i++) {
         if(i % 2 == 0 ){
         
-        room =   room1.MakeRoom("Enemy room", "your Aim is to Fight and defeat your opponent");
+        room =   room1.CreateRoom("Enemy room", "your Aim is to Fight and defeat your opponent");
         }else{
-        room = room2.MakeRoom("puzzle room", "hope You got your thinking shoes on ");
+        room = room2.CreateRoom("puzzle room", "hope You got your thinking shoes on ");
         }
         room.describe();
         room.problem(answer, i, you);
