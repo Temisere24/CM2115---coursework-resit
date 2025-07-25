@@ -1,6 +1,6 @@
 public class GrimBeast extends Enemy {
     public GrimBeast(int hp, String name, int amount){
-        super(3, "FesterBeast", amount );
+        super(3, "GrimBeast", amount );
     }
         @Override
     public void attack() {
